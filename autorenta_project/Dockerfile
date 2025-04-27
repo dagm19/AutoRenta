@@ -20,6 +20,6 @@ RUN pip install poetry && \
 COPY ./autorenta_project /app
 
 #Run the application
-ENTRYPOINT ["python", "main.py"]
+ENTRYPOINT ["python", "manage.py"]
 CMD ["runserver", "0.0.0.0:80", "--noreload"]
 
